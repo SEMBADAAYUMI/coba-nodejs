@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="arow.css" />
+  </head>
+  <body>
+    <script>
+      const sayHello = (name) => {
+        const say = `Hello ${name}`;
+        console.info(say);
+      };
+      sayHello("Sembada");
+
+      const sayHello1 = (name) => console.log(`Hello ${name}`);
+      sayHello1("Ganteng");
+      // const sum = (first, second) => {
+      //   return first + second;
+      // };
+      const sum = (first, second) => first + second;
+      console.log(sum(100, 100));
+
+      function giveMeName(callback) {
+        callback("Sembada");
+      }
+      // anonimous function
+      // giveMeName(function (name) {
+      //   console.log(`Hello${name}`);
+      // });
+
+      giveMeName((name) => console.log(`Hello${name}`));
+
+      // const Mahasiswa = function () {
+      //   this.nama = "sembada";
+      //   this.umur = "17";
+      //   this.sayHello2 = function () {
+      //     console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+      //   };
+      // };
+      // const sembada = new Mahasiswa();
+      const Mahasiswa = function () {
+        this.nama = "sembada";
+        this.umur = "17";
+        this.sayHello2 = () => {
+          console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+        };
+      };
+      const sembada = new Mahasiswa();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.buttons {
+  width: 120px;
+  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.buttons button:hover {
+  background-color: aqua;
+}
+.result {
+  background-color: #ddd;
+  width: 120px;
+  height: 50px;
+}
